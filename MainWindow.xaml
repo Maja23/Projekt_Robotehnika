@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowState="Maximized"
+        Title="Robotehnika d.o.o.">
     <Grid>
-        <Label>proba2</Label>
+
+        <Button Height="100" Width="100" Content="Vstopi" Name="knof" Click="knof_Click"></Button>
+        
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

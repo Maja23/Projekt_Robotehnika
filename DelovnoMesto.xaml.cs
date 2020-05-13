@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.Pdf.Interactive;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,18 +17,17 @@ using System.Windows.Shapes;
 namespace Projekt1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DelovnoMesto.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DelovnoMesto : Page
     {
-        public MainWindow()
+        public DelovnoMesto()
         {
             InitializeComponent();
-        }
 
-        private void knof_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new DelovnoMesto();
+            nacrt.Load(@"..\..\PDF\4500394992.pdf");
+            kontrola.Load(@"..\..\PDF\plan.pdf");
+   
         }
     }
 }

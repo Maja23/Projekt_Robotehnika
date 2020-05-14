@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Projekt1"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Title="Robotehnika d.o.o.">
+        Title="Robotehnika d.o.o." MinHeight="800" MinWidth="1500">
     <Grid>
 
         <Button Height="100" Width="100" Content="Vstopi" Name="knof" Click="knof_Click"></Button>

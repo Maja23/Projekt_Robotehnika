@@ -16,18 +16,19 @@ using System.Windows.Shapes;
 namespace Projekt1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ZacetnaStran.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ZacetnaStran : Page
     {
-        public MainWindow()
+        public ZacetnaStran()
         {
             InitializeComponent();
-
-            ZacetnaStran a = new ZacetnaStran();
-            Main.NavigationService.Navigate(a);
         }
 
-
+        private void knof_Click(object sender, RoutedEventArgs e)
+        {
+            DelovnoMesto a = new DelovnoMesto();
+            this.NavigationService.Navigate(a);
+        }
     }
 }

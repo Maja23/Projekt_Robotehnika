@@ -10,24 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Projekt1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NastavitevStroja.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NastavitevStroja : Window
     {
-        public MainWindow()
+        public NastavitevStroja()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-
-            ZacetnaStran a = new ZacetnaStran();
-            Main.NavigationService.Navigate(a);
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
 
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -26,8 +26,40 @@ namespace Projekt1
             InitializeComponent();
 
             nacrt.Load(@"..\..\PDF\4500394992.pdf");
-            kontrola.Load(@"..\..\PDF\plan.pdf");
    
+        }
+
+        private void plan_kontrole_Click(object sender, RoutedEventArgs e)
+        {
+            kontrola.Load(@"..\..\PDF\plan.pdf");
+        }
+
+        private void reklamacija_Click(object sender, RoutedEventArgs e)
+        {
+            kontrola.Load(@"..\..\PDF\4500394992.pdf");
+        }
+
+        private void teh_postopki_Click(object sender, RoutedEventArgs e)
+        {
+            kontrola.Load(@"..\..\PDF\4500394442.pdf");
+        }
+
+        private void nastavitev_stroja_Click(object sender, RoutedEventArgs e)
+        {
+     
+            
+        }
+
+        private void odjava_Click(object sender, RoutedEventArgs e)
+        {
+            NastavitevStroja a = new NastavitevStroja();
+            a.Show();
+            
+            /* if SHRANI je blo kliknjeno
+            ZacetnaStran b = new ZacetnaStran();
+            this.NavigationService.Navigate(b); */  
+
+
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt1"
         mc:Ignorable="d"
-        Title="Odjava" Height="450" Width="800"
+        Title="Nastavitev stroja" Height="450" Width="800"
         MinHeight="250"
         MaxHeight="250"
         MinWidth="400"
@@ -14,60 +14,6 @@
 
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="5*" />
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-
-        <Grid Margin="5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-
-        <Label>Število dobrih kosov:</Label>
-        <TextBox x:Name="dobri_kosi" Grid.Column="1" Margin="0,0,0,10" />
-
-        <!--string str;
-         str = text1.Text;-->
-        
-        <Label Grid.Row="1">Število slabih kosov:</Label>
-        <TextBox x:Name="slabi_kosi" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" />
-
-        <Label Grid.Row="2">Razlog napake:</Label>
-        <ComboBox x:Name="napaka" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10">
-            <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
-            <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
-            <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
-        </ComboBox>
-
-        <!--string selected = cmbbox.Text;
-            MessageBox.Show(selected);-->
-
-        <Label Grid.Row="3" Margin="0,0,0,10">Opomba: </Label >
-        <TextBox x:Name="opomba" Grid.Row="3" Grid.Column="1" AcceptsReturn="True" />
-
-        </Grid>
-
-        <Grid Grid.Row="1" Margin="5">
-
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button Content="Shrani" Width="100" Margin="0 0 10 0" Click="Button_Click" ></Button>
-                    <Button Content="Prekini" Width="100" Click="Button_Click_1" ></Button>
-                </StackPanel>
-            </StackPanel>
-
-
-
-        </Grid>
+     
     </Grid>
 </Window>

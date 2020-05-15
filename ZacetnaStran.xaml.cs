@@ -25,7 +25,7 @@ namespace Projekt1
             InitializeComponent();
         }
 
-        private void knof_Click(object sender, RoutedEventArgs e)
+        private void delovno_mesto_Click(object sender, RoutedEventArgs e)
         {
             DelovnoMesto a = new DelovnoMesto();
             this.NavigationService.Navigate(a);

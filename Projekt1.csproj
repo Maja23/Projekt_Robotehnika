@@ -74,6 +74,9 @@
     <Compile Include="OdjavaStroj.xaml.cs">
       <DependentUpon>OdjavaStroj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Stroji.xaml.cs">
+      <DependentUpon>Stroji.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZacetnaStran.xaml.cs">
       <DependentUpon>ZacetnaStran.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="OdjavaStroj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stroji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

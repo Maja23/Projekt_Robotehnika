@@ -9,7 +9,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -52,11 +51,6 @@ namespace Projekt1
 
             a.ShowDialog();
 
-       /*     ZacetnaStran b = new ZacetnaStran();
-            this.NavigationService.Navigate(b);
-
-            Thread.Sleep(500);*/
-
         }
 
         private void odjava_Click(object sender, RoutedEventArgs e)
@@ -72,14 +66,10 @@ namespace Projekt1
                 ZacetnaStran b = new ZacetnaStran();
                 this.NavigationService.Navigate(b);
 
+                MessageBox.Show("Uspešno shranjeno");
+
                 Thread.Sleep(500);
             }
-            
-
-
-
-
-
 
         }
     }

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Projekt1"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ZacetnaStran" Background="White">
+      Title="ZacetnaStran" Background="Gainsboro">
 
     <Grid>
 
@@ -46,7 +46,7 @@
         </Border>
 
         <Border BorderBrush="Black" Background="Yellow" CornerRadius="6" Margin="5"  Grid.Column="1" Grid.Row="0">
-            <Button Content="STROJI" Margin="5" FontSize="18" FontWeight="Bold">
+            <Button x:Name="stroji" Content="STROJI" Margin="5" FontSize="18" FontWeight="Bold" Click="stroji_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="LightGray" />

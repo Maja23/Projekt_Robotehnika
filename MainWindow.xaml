@@ -8,6 +8,6 @@
         WindowState="Maximized"
         Title="Robotehnika d.o.o." MinHeight="800" MinWidth="1500">
     <Grid>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
+        <Frame x:Name="Main" NavigationUIVisibility="Visible"></Frame>
     </Grid>
 </Window>

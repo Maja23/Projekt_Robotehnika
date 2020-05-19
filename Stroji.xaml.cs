@@ -16,25 +16,13 @@ using System.Windows.Shapes;
 namespace Projekt1
 {
     /// <summary>
-    /// Interaction logic for ZacetnaStran.xaml
+    /// Interaction logic for Stroji.xaml
     /// </summary>
-    public partial class ZacetnaStran : Page
+    public partial class Stroji : Page
     {
-        public ZacetnaStran()
+        public Stroji()
         {
             InitializeComponent();
-        }
-
-        private void delovno_mesto_Click(object sender, RoutedEventArgs e)
-        {
-            DelovnoMesto a = new DelovnoMesto();
-            this.NavigationService.Navigate(a);
-        }
-
-        private void stroji_Click(object sender, RoutedEventArgs e)
-        {
-            Stroji a = new Stroji();
-            this.NavigationService.Navigate(a);
         }
     }
 }

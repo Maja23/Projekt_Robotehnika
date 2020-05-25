@@ -27,6 +27,10 @@ namespace Projekt1
 
         private void delovno_mesto_Click(object sender, RoutedEventArgs e)
         {
+
+            PrijavaUporabnika ba = new PrijavaUporabnika();
+            ba.ShowDialog();
+
             DelovnoMesto a = new DelovnoMesto();
             this.NavigationService.Navigate(a);
         }

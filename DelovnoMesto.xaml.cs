@@ -26,8 +26,6 @@ namespace Projekt1
         {
             InitializeComponent();
 
-            nacrt.Load(@"..\..\PDF\4500394992.pdf");
-   
         }
 
         private void plan_kontrole_Click(object sender, RoutedEventArgs e)
@@ -45,7 +43,7 @@ namespace Projekt1
             kontrola.Load(@"..\..\PDF\4500394442.pdf");
         }
 
-        private void nastavitev_stroja_Click(object sender, RoutedEventArgs e)
+        public void nastavitev_stroja_Click(object sender, RoutedEventArgs e)
         {
             NastavitevStroja a = new NastavitevStroja();
 

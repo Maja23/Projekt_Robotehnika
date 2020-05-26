@@ -31,8 +31,18 @@ namespace Projekt1
             PrijavaUporabnika ba = new PrijavaUporabnika();
             ba.ShowDialog();
 
-            DelovnoMesto a = new DelovnoMesto();
-            this.NavigationService.Navigate(a);
+            int preveri = ba.preveri;
+
+            if(preveri == 1)
+            {
+               DelovnoMesto a = new DelovnoMesto();
+               this.NavigationService.Navigate(a);
+            }
+
+
+
+
+
         }
 
         private void stroji_Click(object sender, RoutedEventArgs e)

@@ -26,6 +26,7 @@ namespace Projekt1
         {
             InitializeComponent();
 
+
         }
 
         private void plan_kontrole_Click(object sender, RoutedEventArgs e)
@@ -68,6 +69,7 @@ namespace Projekt1
 
                 Thread.Sleep(500);
             }
+           
 
         }
     }

@@ -54,6 +54,7 @@ namespace Projekt1
 
         }
 
+        public string delavec = " neke ";
         private void delvec_Button_Click(object sender, RoutedEventArgs e)
         {
             int selectedIndex = delavec_ComboBox.SelectedIndex;
@@ -63,6 +64,8 @@ namespace Projekt1
                 MessageBox.Show("Izberi vrednost");
             else
                 MessageBox.Show("Selected Item Text: " + selectedItem.ToString());
+
+            
         }
 
         private void operacija_Button_Click(object sender, RoutedEventArgs e)
@@ -75,11 +78,16 @@ namespace Projekt1
         private void potrdi_Button_Click(object sender, RoutedEventArgs e)
         {
 
+            Object selectedItem = delavec_ComboBox.SelectedItem; //shranim kaj je izbral kot delavca in v ZacetnaStran pred usmeritvijo v label delavec iz DelovnoMesto zapisem
+            delavec = selectedItem.ToString();
+
             this.Close();
 
             if(sender == potrdi_Button)
             {
                 preveri = 1;
+
+
             }
 
         }

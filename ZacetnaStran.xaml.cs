@@ -35,14 +35,11 @@ namespace Projekt1
 
             if(preveri == 1)
             {
-               DelovnoMesto a = new DelovnoMesto();
-               this.NavigationService.Navigate(a);
+                DelovnoMesto a = new DelovnoMesto();
+                a.delavec.Content = ba.delavec;  //zapisem kaj je izbrano v PrijavaUporabnik pod kategorijo delavec 
+
+                this.NavigationService.Navigate(a);
             }
-
-
-
-
-
         }
 
         private void stroji_Click(object sender, RoutedEventArgs e)

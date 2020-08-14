@@ -27,6 +27,8 @@ namespace Projekt1
             InitializeComponent();
 
 
+
+
         }
 
         private void plan_kontrole_Click(object sender, RoutedEventArgs e)

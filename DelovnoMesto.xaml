@@ -57,7 +57,7 @@
                         <Label x:Name="koda" Content="61116256" FontSize="20" FontWeight="Bold"/>
                         <Label x:Name="kos" Content="400" FontSize="20" FontWeight="Bold"/>
                         <Label x:Name="cikel" Content="2min 10s" FontSize="20" FontWeight="Bold" />
-                        <Label x:Name="delavec" Content="prazno" FontSize="20" FontWeight="Bold" />
+                        <Label x:Name="delavec" Content="prazno" FontSize="20" FontWeight="Bold" Foreground="Red"/>
                     </StackPanel>
                 </Grid>
 

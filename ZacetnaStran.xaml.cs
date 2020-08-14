@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PovezavaBaza;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,12 +32,34 @@ namespace Projekt1
             PrijavaUporabnika ba = new PrijavaUporabnika();
             ba.ShowDialog();
 
+            DataAccess db = new DataAccess();
+
+
             int preveri = ba.preveri;
 
             if(preveri == 1)
             {
                 DelovnoMesto a = new DelovnoMesto();
                 a.delavec.Content = ba.delavec;  //zapisem kaj je izbrano v PrijavaUporabnik pod kategorijo delavec 
+                a.dn.Content = ba.st_nalog_textBox.Text;
+
+                string del_nalog = ba.st_nalog_textBox.Text;
+                string sifra_blaga = db.SifraBlaga(del_nalog);
+                string kolicina = db.Stkosov(del_nalog);
+                string koda_blaga = db.KodaBlaga(sifra_blaga);
+                string koda_operacije = ba.operacija;
+
+                string teh_postopek_st = db.CikelCas1(sifra_blaga);
+                string cikel_cas = db.CikelCas(teh_postopek_st, koda_operacije);
+                double cas = Convert.ToDouble(cikel_cas);
+                double cas_minute = cas * 60;
+                int minute = Convert.ToInt32(Math.Floor(cas_minute));
+                int sekunde = Convert.ToInt32(60 * (cas_minute - Math.Floor(cas_minute)));
+
+                a.sifra.Content = sifra_blaga.Replace(" ", "");
+                a.koda.Content = koda_blaga;
+                a.kos.Content = kolicina;
+                a.cikel.Content = minute + "min " + sekunde + "s";
 
                 this.NavigationService.Navigate(a);
             }

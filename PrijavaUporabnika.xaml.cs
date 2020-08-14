@@ -39,7 +39,7 @@ namespace Projekt1
             foreach (Person a in people) //iz lista prepisem v combobox
             {
 
-                delavec_ComboBox.Items.Add(a.FullInfro.ToString());
+                delavec_ComboBox.Items.Add(a.FullInfro.Trim());
             }
 
             postopek_sifraoperacije = db.SifraOperacije();
@@ -47,7 +47,7 @@ namespace Projekt1
             foreach (SifraOperacije b in postopek_sifraoperacije) //iz lista prepisem v combobox
             {
 
-                operacija_ComboBox.Items.Add(b.FullInfro.ToString());
+                operacija_ComboBox.Items.Add(b.izpisiSifro);
             }
 
 
@@ -55,6 +55,7 @@ namespace Projekt1
         }
 
         public string delavec = " neke ";
+        public string operacija = "";
         private void delvec_Button_Click(object sender, RoutedEventArgs e)
         {
             int selectedIndex = delavec_ComboBox.SelectedIndex;
@@ -70,7 +71,7 @@ namespace Projekt1
 
         private void operacija_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
 
@@ -80,6 +81,8 @@ namespace Projekt1
 
             Object selectedItem = delavec_ComboBox.SelectedItem; //shranim kaj je izbral kot delavca in v ZacetnaStran pred usmeritvijo v label delavec iz DelovnoMesto zapisem
             delavec = selectedItem.ToString();
+            Object selectedItem1 = operacija_ComboBox.SelectedItem; //shranim kaj je izbral kot delavca in v ZacetnaStran pred usmeritvijo v label delavec iz DelovnoMesto zapisem
+            operacija = selectedItem1.ToString();
 
             this.Close();
 
